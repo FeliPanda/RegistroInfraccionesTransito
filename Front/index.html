@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de infracciones de transito</title>
+</head>
+<body>
+    <h1>Registro de infracciones de transito</h1>
+    <p>Por favor llene el siguiente formulario para registrar su infracción de transito.</p>
+    <form id="personaForm" action="/personas" method="post">
+        <label for="nombrePersona">Nombre:</label>
+        <input type="text" id="nombrePersona" name="nombrePersona" required>
+        <label for="correoElectronico">Correo Electrónico:</label>
+        <input type="email" id="correoElectronico" name="correoElectronico" required>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <p>Registro del vehiculo</p>
+
+    <form id="vehiculoForm"  action="/vehiculos" method="post">
+        <label for="colorVehiculo">Color</label>
+        <input type="text" id="colorVehiculo" name="colorVehiculo" required>
+        <label for="marcaVehiculo">Marca</label>
+        <input type="text" id="marcaVehiculo" name="marcaVehiculo" required>
+        <label for="numeroPlaca">Número de placa</label>
+        <input type="text" id="numeroPlaca" name="numeroPlaca" required>
+        <label for="personaId">ID de Persona:</label>
+        <input type="text" id="personaId" name="personaId" required>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <p>Registro del oficial</p>
+    
+    <form id="oficialForm" action="/oficiales" method="post">
+        <label for="nombreOficial">Nombre</label>
+        <input type="text" id="nombreOficial" name="nombreOficial" required>
+        <label for="idOficial">ID oficial</label>
+        <input type="number" name="idOficial" id="idOficial" required>
+        <button type="submit"> Registrar</button>
+    </form>
+
+
+</body>
+</html>
